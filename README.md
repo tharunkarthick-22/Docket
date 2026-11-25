@@ -1,75 +1,40 @@
-# React + TypeScript + Vite
+# Docket – Task Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Docket is a simple and intuitive task management application built with **React, TypeScript, and Tailwind CSS**. It helps users organize their daily activities, manage priorities, and keep track of deadlines through a clean and user-friendly interface.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Task Management** – Create and organize tasks easily.
+- **Priority Management** – Assign High, Medium, or Low priority to tasks.
+- **Custom Date & Time Picker** – Select task deadlines using a custom-built date and time picker.
+- **Interactive UI** – Clean and user-friendly interface.
+- **Reusable Components** – Built with reusable React components for better maintainability.
+- **Type Safety** – Uses TypeScript for improved code reliability.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Tailwind CSS
+- React Icons
+- Material UI
+- React Hot Toast
 
-## Expanding the ESLint configuration
+## 🎯 What I Learned
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Building reusable React components.
+- Managing state using React Hooks and Context API.
+- Working with TypeScript interfaces, props, and types.
+- Creating custom UI components.
+- Handling date and time using JavaScript.
+- Building responsive layouts with Tailwind CSS.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 👨‍💻 Author
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+**Tharun Karthick**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- GitHub: [@tharunkarthick-22](https://github.com/tharunkarthick-22)
 
-```
+---
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+*Built with ❤️ using React, TypeScript, and Tailwind CSS.*
